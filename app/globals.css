@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #3f7e64;
+  --foreground: #2a3838;
 }
 
 @theme inline {
@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #31535c;
+    --foreground: #041518;
   }
 }
 
@@ -23,4 +23,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+.profile-section {
+  @apply bg-green-200 p-6 rounded-3xl m-6;
+  background-image: linear-gradient(135deg, #51e6e6, #e5e7eb);
 }
