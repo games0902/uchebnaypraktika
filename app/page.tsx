@@ -1,6 +1,7 @@
 'use client'
 import type { PersonalFact } from './types'
 import { useState, useEffect } from 'react'
+import BookList from './components/BookList'
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -76,6 +77,11 @@ export default function Home() {
       <section className="profile-section">
         <h2 className="text-2xl font-bold text-gray-800">Цели</h2>
         <p className="text-lg text-gray-600">Освоить Next.js и найти работу в крутой IT-компании</p>
+      </section>
+
+      <section className="profile-section">
+        <h2 className="text-2xl font-bold text-gray-800 mb-3">Список книг</h2>
+        <BookList />
       </section>
 
       <h2 className="text-3xl font-bold text-center text-gray-900 mt-12 mb-6">Интересные факты</h2>
