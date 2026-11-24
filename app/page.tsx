@@ -7,7 +7,7 @@ export default function Home() {
   const [searchTerm, setSearchTerm] = useState('')
   const [expandedFactId, setExpandedFactId] = useState<string | null>(null)
   const [factsList, setFactsList] = useState<PersonalFact[]>([
-    { id: '1', title: 'hobby', summary: 'Люблю играть', details: ['Dota', 'Rust', 'Counter Strike 2'], image: '@/image/dota.jsx' },
+    { id: '1', title: 'hobby', summary: 'Люблю играть', details: ['Dota', 'Rust', 'Counter Strike 2'], image: '' },
     { id: '2', title: 'шмуранова', summary: 'я знаю что она поедет в питер', details: ['с подругой'], image: '/' },
     { id: '3', title: 'илья', summary: 'илья курит CAMEL', details: ['', ''], image: '' },
   ])
